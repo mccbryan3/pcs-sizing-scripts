@@ -63,3 +63,4 @@ foreach ($i in $awsregions) {
 "Total count of Redshift clusters across all regions: $redshift_count"
 "Total count of NAT gateways across all regions: $natgw_count"
 "Total billable resources: $($ec2_instance_count+$rds_instance_count+$elb_count+$redshift_count+$natgw_count)"
+"Total billable with IAM module enabled: $(($ec2_instance_count+$rds_instance_count+$elb_count+$redshift_count+$natgw_count)*1.25)"
